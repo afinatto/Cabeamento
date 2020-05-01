@@ -1,13 +1,20 @@
 \begin{table}[h!] % coloque h! para forcar a posicao
+\onehalfspacing
+\caption{Usuários e Aplicativos}
+\vspace{0.5cm}
 \centering
-\caption{Modifique a legenda e crie um label}
-\label{tab2} %com este label vc faz referencia no texto
-\begin{tabular}{|l|l|l|l|l|}
+\renewcommand{\arraystretch}{1.4}
+\label{tab2}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|}
 \hline
-\multicolumn{1}{|c|}{\textbf{Este é um exemplo de tabela}} & \multicolumn{2}{c|}{\textbf{C1}} & \multicolumn{2}{c|}{\textbf{C2}} \\ \hline
-Você pode criar a tabela no excel                          & 1              & 2               & 3               & 4              \\ \hline
-Exportar para CSV                                          & 5              & 6               & 7               & 8              \\ \hline
-E importar no Table Generator                              & 9              & 10              &                 &                \\ \hline
-\multicolumn{5}{|c|}{\textit{Gere o tex, e adicione em seu arquivo}}                                                             \\ \hline
-\end{tabular}
+\textbf{Usuários}        & \textbf{Aplicativos}                                                 \\ \hline
+Diretor                  & Microsoft Office, Videoconferência, Aplicações Web                  \\ \hline
+Recepcionista            & Microsoft Office, Controle de Acesso, Aplicações Web                \\ \hline
+Técnicos Administrativos & Microsoft Office, Videoconferência                                   \\ \hline
+Pesquisadores            & Microsoft Office, Aplicações Web, Softwares de Análises Estatísticas \\ \hline
+Alunos do Mestrado       & Microsoft Office, Aplicações Web, Softwares de Análises Estatísticas \\ \hline
+\end{tabular}%
+}
+
 \end{table}
